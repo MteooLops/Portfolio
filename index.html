@@ -5,35 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mteoo's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body id="general" class="h-auto w-auto p-0 m-0 bg-gradient-to-br from-[#ffa200] to-[#aa00ff] space-y-12">
-  <!-- Header Section -->
-  <header id="info" class="text-center font-medium flex flex-col items-center space-y-4">
-    <h1 class="text-5xl text-white underline">Mteoo's Portfolio</h1>
-    <p class="text-white">Hello, I'm Mateo Agustin Lopez Enseñat, a software developer from Argentina.</p>
-    <p class="text-white">I'm currently working on my portfolio, but I have been working on other projects.</p>
+<body id="general">
+  <nav id="navbar">
+    <div id="logo" style="color: white; font-size: 24px;">Mteoo</div>
+    <ul>
+      <li><a href="#info">Info</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header id="info">
+    <h1>Mteoo's Portfolio</h1>
+    <p >Hello, I'm Mateo Agustin Lopez Enseñat, a software developer from Argentina.</p>
+    <p >I'm currently working on my portfolio, but I have been working on other projects.</p>
   </header>
-  <section id="projects" class="text-white text-center px-8">
-    <h2 class="text-3xl mb-4">My Most Recent Projects:</h2>
-    <div class="space-y-4">
-      <img src="public/TurroExplode.png" alt="TurroExplode" class="aspect-video mx-auto" height="400">
-      <p id="TurroExplode" class="text-sm">TurroExplode: I've been working lately on this game called TurroExplode,
-        using unity 6 and C# for the past month or so.</p>
-    </div>
-  </section>
-  <footer class="fixed bottom-2 w-full text-center">
-    <ul class="flex justify-center space-x-4">
+  <footer>
+    <ul>
       <li>
-        <a href="https://github.com/MteooLops">
-          <img src="public/github.svg" alt="GitHub" class="h-12">
-        </a>
+        <a id="github"href="https://github.com/MteooLops">
+          <img  src="public/github.svg"></a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/mateo-lopez-b1942732b/">
-          <img src="public/linkedin.svg" alt="LinkedIn" class="h-12">
-        </a>
+        <a id="linkedin" href="https://www.linkedin.com/in/mateo-lopez-b1942732b/" id="linkedin">
+          <img src="public/linkedin.svg" alt="LinkedIn"></a>
       </li>
     </ul>
   </footer>
