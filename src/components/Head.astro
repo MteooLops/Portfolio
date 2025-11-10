@@ -1,0 +1,44 @@
+<div class="flex w-full h-fit justify-between p-5 items-start fixed top-0 bg-black/60 backdrop-blur-sm z-50">
+	<div class="flex flex-col items-start px-5">
+		<h1 class="text-4xl font-bold">Mateo Agustín López Enseñat</h1>
+		<p class="text-2xl font-bold text-gray-400">Desarrollador Web</p>
+	</div>
+    <div class="flex flex-row text-xl font-bold gap-8 p-5">
+        <a href="/CV-Mateo_Lopez.pdf">Curriculum Vitae</a> {/* TODO: Hacer el puto curriculum de mierda */} 
+        <a href="#aboutMe">Acerca de mí</a>
+    <a href="/projects">Proyectos</a>
+        <a href="https://linktr.ee/mteoo.lops">Contacto</a>
+    </div>
+</div>
+
+<style>
+    a {
+        color: #9ca3af;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 100%;
+        background: #d1d5db;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.2s ease-in-out;
+        pointer-events: none;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+    }
+
+    a:hover {
+        color: #d1d5db;
+    }
+</style>
